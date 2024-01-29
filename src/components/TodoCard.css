@@ -5,4 +5,14 @@
   padding: 10px;
   border: 1px solid;
   margin-bottom: 10px;
+  border-radius: 20px;
+}
+.cmpBtn{
+  background-color: lightgreen;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.dltBtn{
+  background-color: lightcoral;
+  border-radius: 10px;
 }
