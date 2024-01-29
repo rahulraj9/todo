@@ -1,6 +1,13 @@
-import {ADD_TODO,DELETE_TODO,UPDATE_TOD} from '../actions/todoActions'
+import {ADD_TODO,DELETE_TODO,UPDATE_TODO} from '../actions/todoActions'
 const initialState={
-  todos:[]
+  todos:[
+    {
+      text:"Meeting at 2",completed:true
+    },
+    {
+      text:"Meeting at 4",completed:false
+    }
+  ]
 }
 export default function todoReducer(state=initialState,action){
   switch (action.type) {
@@ -15,7 +22,7 @@ export default function todoReducer(state=initialState,action){
           }
         ]
       }
-    case UPDATE_TOD:
+    case UPDATE_TODO:
       return{
         ...state,
         todos:state.todos.map((todo,i)=>{
@@ -25,7 +32,13 @@ export default function todoReducer(state=initialState,action){
           return todo
         })
       }
-    // case DELETE_TODO:
+    case DELETE_TODO:
+      return {
+        ...state,
+        todos:state.todos.filter((item,index)=>{
+          return index !== action.index
+        })
+      }
     default:
       return state;
   }
