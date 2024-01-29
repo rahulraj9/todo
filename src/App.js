@@ -1,3 +1,4 @@
+import TodoCard from './components/TodoCard';
 import TodoForm from './components/TodoForm';
 
 function App() {
@@ -5,6 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
      <TodoForm/>
+     <TodoCard/>
+     <TodoCard/>
+     <TodoCard/>
     </div>
   );
 }
