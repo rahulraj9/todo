@@ -1,7 +1,10 @@
+import { createStore, combineReducers } from "redux";
 
-import {createStore} from 'redux'
+import todoReducer from "./reducer/todoReducer";
+import notesReducer from "./reducer/notesReducer";
 
-import todoReducer from './reducer/todoReducer'
-
-
-export  const store = createStore(todoReducer)
+export const result = combineReducers({
+  todoReducer: todoReducer,
+  notesReducer: notesReducer,
+});
+export const store = createStore(result)

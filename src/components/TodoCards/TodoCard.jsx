@@ -2,7 +2,7 @@ import "./TodoCard.css";
 import { useSelector,useDispatch } from "react-redux";
 import {updatedTod,deleteTodo} from '../../redux/actions/todoActions'
 export default function TodoCard() {
-  const todos = useSelector((state)=>state.todos)
+  const todos = useSelector((state)=>state.todoReducer.todos)
   const dispatch = useDispatch()
 
   function handleComplete(i){

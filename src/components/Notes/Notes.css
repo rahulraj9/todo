@@ -1,0 +1,10 @@
+.mainNotesDiv{
+  display: flex;
+  
+}
+.noteBtn{
+  background-color: lightgreen;
+}
+.notes{
+  width: 1900px;
+}

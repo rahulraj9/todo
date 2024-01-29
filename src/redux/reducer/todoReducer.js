@@ -1,12 +1,7 @@
 import {ADD_TODO,DELETE_TODO,UPDATE_TODO} from '../actions/todoActions'
 const initialState={
   todos:[
-    {
-      text:"Meeting at 2",completed:true
-    },
-    {
-      text:"Meeting at 4",completed:false
-    }
+   
   ]
 }
 export default function todoReducer(state=initialState,action){

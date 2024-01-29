@@ -1,8 +1,10 @@
 import { useState } from "react";
-import TodoCard from './components/TodoCards/TodoCard'
+import TodoCard from "./components/TodoCards/TodoCard";
 import TodoForm from "./components/TodoForm/TodoForm";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import Notes from "./components/Notes/Notes";
+import NotesCard from "./components/NotesCards/NotesCards";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Provider store={store}>
         <TodoForm />
         <TodoCard />
+        <Notes />
+        <NotesCard />
       </Provider>
     </div>
   );
