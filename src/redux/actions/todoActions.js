@@ -1,7 +1,7 @@
 // Actions
-const ADD_TODO='Add Todo'
-const DELETE_TODO='Delete Todo'
-const UPDATE_TOD='Update Todo'
+export const ADD_TODO='Add Todo'
+export const DELETE_TODO='Delete Todo'
+export const UPDATE_TOD='Update Todo'
 
 
 //Action creator
