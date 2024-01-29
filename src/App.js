@@ -1,6 +1,6 @@
 import { useState } from "react";
-import TodoCard from "./components/TodoCard";
-import TodoForm from "./components/TodoForm";
+import TodoCard from './components/TodoCards/TodoCard'
+import TodoForm from "./components/TodoForm/TodoForm";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 

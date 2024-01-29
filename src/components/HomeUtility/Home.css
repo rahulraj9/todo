@@ -1,0 +1,17 @@
+.home{
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  padding: 158px 0 245px
+}
+
+.todoBtn{
+  margin-right: 10px;
+  width: 200px;
+  height: 299px;
+}
+.notesBtn{
+  margin-right: 10px;
+  width: 200px;
+  height: 299px;
+}

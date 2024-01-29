@@ -1,8 +1,8 @@
 import { useState } from "react";
 import {useDispatch } from "react-redux";
-import {addTodo} from '../redux/actions/todoActions'
+import {addTodo} from '../../redux/actions/todoActions'
 import "./TodoForm.css";
-export default function TodoForm(props) {
+export default function TodoForm() {
   const [todotext, setTodotext] = useState("");
   const dispatch = useDispatch()
 

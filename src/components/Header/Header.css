@@ -1,0 +1,16 @@
+.header{
+  display: flex;
+}
+.todo{
+  margin-left: 10px;
+  margin-top: 36px;
+  margin-right: 10px;
+  color: #981c98;
+  cursor: pointer;
+}
+.notes{
+  margin-top: 36px;
+  margin-right: 10px;
+  color: #981c98;
+  cursor: pointer;
+}
